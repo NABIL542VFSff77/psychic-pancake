@@ -97,8 +97,7 @@
             android:text="Reset to Defaults"
             android:textColor="@color/white"
             android:backgroundTint="#333333"
-            android:layout_marginBottom="12dp"
-            android:cornerRadius="12dp" />
+            android:layout_marginBottom="12dp" />
 
         <Button
             android:id="@+id/btnToggle"
@@ -106,8 +105,7 @@
             android:layout_height="52dp"
             android:text="Service: Running"
             android:textColor="@color/bg_dark"
-            android:backgroundTint="@color/spotify_green"
-            android:cornerRadius="12dp" />
+            android:backgroundTint="@color/spotify_green" />
 
         <TextView
             android:layout_width="wrap_content"
