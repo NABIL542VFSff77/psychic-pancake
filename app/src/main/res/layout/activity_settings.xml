@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dynamic Island Settings"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play music on Spotify and leave the app to see the island"
+            android:textColor="#AAAAAA"
+            android:textSize="13sp"
+            android:layout_marginBottom="32dp" />
+
+        <!-- WIDTH -->
+        <TextView
+            android:id="@+id/labelWidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Width: 220dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp" />
+
+        <SeekBar
+            android:id="@+id/seekWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:progressTint="@color/spotify_green"
+            android:thumbTint="@color/spotify_green" />
+
+        <!-- HEIGHT -->
+        <TextView
+            android:id="@+id/labelHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height: 36dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp" />
+
+        <SeekBar
+            android:id="@+id/seekHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:progressTint="@color/spotify_green"
+            android:thumbTint="@color/spotify_green" />
+
+        <!-- Y POSITION -->
+        <TextView
+            android:id="@+id/labelYPos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top offset: 40px"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp" />
+
+        <SeekBar
+            android:id="@+id/seekYPos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:progressTint="@color/spotify_green"
+            android:thumbTint="@color/spotify_green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can also drag the island directly on screen"
+            android:textColor="#777777"
+            android:textSize="12sp"
+            android:layout_marginBottom="36dp" />
+
+        <!-- BUTTONS -->
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Reset to Defaults"
+            android:textColor="@color/white"
+            android:backgroundTint="#333333"
+            android:layout_marginBottom="12dp"
+            android:cornerRadius="12dp" />
+
+        <Button
+            android:id="@+id/btnToggle"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Service: Running"
+            android:textColor="@color/bg_dark"
+            android:backgroundTint="@color/spotify_green"
+            android:cornerRadius="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note: Grant both Overlay and Notification Access permissions for the island to work correctly."
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+</ScrollView>
